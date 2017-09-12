@@ -30,6 +30,7 @@ LOCAL_SHARED_LIBRARIES := libext2_uuid
 
 LOCAL_MODULE := sgdisk
 
+include external/stlport/libstlport.mk
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
@@ -49,4 +50,5 @@ LOCAL_SHARED_LIBRARIES := libext2_uuid
 LOCAL_MODULE := sgdisk_host
 LOCAL_MODULE_STEM := sgdisk
 
+include external/stlport/libstlport.mk
 include $(BUILD_HOST_EXECUTABLE)
